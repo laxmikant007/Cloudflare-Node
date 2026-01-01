@@ -1,14 +1,24 @@
 {
-  "name": "agenticserver",
-  "main": "server.js",
-  "compatibility_date": "2026-01-01",
-  "compatibility_flags": ["nodejs_compat"],
-  "observability": {
-    "logs": {
-      "enabled": true,
-      "head_sampling_rate": 1,
-      "invocation_logs": true,
-      "persist": true
-    }
-  }
+	"name": "agenticserver",
+	"main": "server.js",
+	"compatibility_date": "2026-01-01",
+	"compatibility_flags": [
+		"nodejs_compat"
+	],
+	"observability": {
+		"logs": {
+			"enabled": true,
+			"head_sampling_rate": 1,
+			"invocation_logs": true,
+			"persist": true
+		}
+	},
+	"d1_databases": [
+		{
+			"binding": "agenticdb",
+			"database_name": "prod-d1-tutorial",
+			"database_id": "679f101c-0079-4c33-ac35-77129aa631f8",
+			"remote": true
+		}
+	]
 }
